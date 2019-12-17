@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-image: url("resources/Teacherpictures/teachersbackground.jpg");
+            background-size: 100% 100%;
+        }
+        /*导航栏*/
+        .head {
+            background-color: rgba(255,255,255,0);
+            height: 100px;
+            width: 100%;
+        }
+        .imgbox {
+            float: left;
+            width: 16.6%;
+            height: 100px;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        .imgbox img {
+            transform:scale(0.65,0.65);
+        }
+        .imgbox:hover {
+            transform: rotatey(360deg);
+        }
+
+        .head a {
+            font-size: 17px;
+            letter-spacing:1.5px;
+            color: black;
+            text-decoration: none;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 16.6%;
+            margin-top: 0px;
+            line-height: 100px;
+            height: 100px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .head a:hover {
+            color:#0099cc;
+        }
+        #top{
+            margin: 0 auto;
+        }
+
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #90bcff;
+            text-decoration: underline;
+        }
+        a:active{
+            color: #000000;
+            text-decoration: none;
+        }
+        a:visited{
+            background-color: #000000;
+        }
+        #divmain{
+            width: auto;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+        }
+        #divleft{
+            width: 300px;
+            height: 580px;
+            float: left;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 20px;
+        }
+        .imgleft{
+            border: 1pt solid #09c;
+            margin-top: 15px;
+        }
+        .lefttexttitle{
+            size: 10px;
+            color: #90bcff;
+            font-weight: bold;
+        }
+        .lefttextcontent{
+            text-align: left;
+            font-size: 12px;
+        }
+        #divright{
+            width: 40%;
+            height: 580px;
+            float: left;
+            margin-right: 20px;
+        }
+        .righttitle{
+
+            font-size: 18px;
+        }
+        .rightcontent{
+            font-size: 15px;
+        }
+        #footer{
+            clear:both;
+            width:1500px;
+            height:58px;
+            margin:0 auto;
+            text-indent:0;
+            text-align:center;
+            background:#ddf0f9 ;
+        }
+
+       </style>
+</head>
+<body>
+     <div id="top">
+
+
+         <img src="resources/Teacherpictures/Teachertop.jpg" height="122" width="100%"/>
+         </div>
+     <div class="head">
+         <div class="imgbox">
+
+
+             <img src="resources/Teacherpictures/Teacherlogo.jpg" height="100" width="150"/>
+         </div>
+         <a href="index.jsp">首页</a>
+         <a href="#">计算机科学与技术</a>
+         <a href="#">软件工程</a>
+         <a href="#">信息管理与技术</a>
+         <a href="#">...</a>
+     </div>
+     <div id="divmain">
+         <div id="divleft">
+             <h3>名师风采</h3>
+             <a href="teacherjieshao.html">
+
+                 <img src="resources/Teacherpictures/wangyangyuan.jpg" height="123" width="93"/></a>
+             <p class="lefttexttitle">王阳元</p>
+             <P class="lefttextcontent">
+                 &nbsp;&nbsp;中国科学院院士，北京大学教授、博士生导师，北京大学微电子学研究院院长，微电子学系主任
+             </P>
+             <a href="">
+
+                 <img src="resources/Teacherpictures/hexingui.jpg" height="123" width="93"/>
+             </a>
+             <P class="lefttexttitle">何新贵</P>
+             <P class="lefttextcontent">
+                 &nbsp;&nbsp;2001年当选为中国工程院信息与电子工程学部院士、学部副主任。北京大学信息科学技术学院教授、学术委员会主任、学院首任院长。
+             </P>
+             <a href="#">
+
+                 <img src="resources/Teacherpictures/yangfuqing.jpg" height="123" width="93"/></a>
+             <p class="lefttexttitle">杨芙清</p>
+             <p class="lefttextcontent">
+                 &nbsp;&nbsp;计算机软件专家，中国科学院院士，北京大学教授、北京大学信息与工程科学学部主任，软件工程国家工程研究中心主任，北京大学软件与微电子学院理事长。
+             </p>
+         </div>
+         <div id="divright">
+             <h3 class="righttitle"><a href="#">计算机科学与技术</a></h3>
+             <p class="chara2">
+                 <a href="">吴彦祖</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">吴彦祖</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">吴彦祖</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">吴彦祖</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">吴彦祖</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">吴彦祖</a><br>
+             </p>
+             <h3 class="righttitle"><a href="#">软件工程</a></h3>
+             <p class="chara2">
+                 <a href="">周杰伦</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">周杰伦</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">周杰伦</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">周杰伦</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">周杰伦</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             <h3 class="righttitle"><a href="#">信息管理与信息技术</a></h3>
+             <p class="chara2">
+                 <a href="">林志玲</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">林志玲</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">林志玲</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">林志玲</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">林志玲</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             <h3 class="righttitle"><a href="#">通信工程</a></h3>
+             <p class="chara2">
+                 <a href="">成龙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">成龙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">成龙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">成龙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">成龙</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             <h3 class="righttitle"><a href="#">电子信息</a></h3>
+             <p class="chara2">
+                 <a href="">新垣结衣</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">新垣结衣</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">新垣结衣</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">新垣结衣</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">新垣结衣</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             </p>
+             <h3 class="righttitle"><a href="#">研究生导师</a></h3>
+             <p class="chara2">
+                 <a href="">张杰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">张杰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">张杰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">张杰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">张杰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             <h3 class="righttitle"><a href="#">教授</a></h3>
+             <p class="chara2">
+                 <a href="">李现</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">李现</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">李现</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">李现</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">李现</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             <h3 class="righttitle"><a href="#">副教授</a></h3>
+             <p class="chara2">
+                 <a href="">杨幂</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">杨幂</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">杨幂</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">杨幂</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">杨幂</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             <h3 class="righttitle"><a href="#">讲师</a></h3>
+             <p class="chara2">
+                 <a href="">迪丽热巴</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">迪丽热巴</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">迪丽热巴</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">迪丽热巴</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">迪丽热巴</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+             <h3 class="righttitle"><a href="#">助教</a></h3>
+             <p class="chara2">
+                 <a href="">简自豪</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">简自豪</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">简自豪</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">简自豪</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">简自豪</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">简自豪</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+             </p>
+         </div>
+     </div>
+     <div id="footer">
+         <p><a href="Main.html">网站首页</a> | <a href="#">邮箱登录</a> | <a href="#">加入收藏</a> | <a href="#">留言反馈</a></p>
+         <p>版权所有 &copy;  2019 信息学院师资团队 Email：Laboratory@163.com</p>
+     </div>
+</body>
+</html>

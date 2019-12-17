@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="teddt:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>teddt</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="teddt-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="teddt:war exploded" />
+    </root>
+  </artifact>
+</component>

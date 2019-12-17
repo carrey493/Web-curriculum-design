@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>实验室中心</title>
+    <style type="text/css">
+        <!--
+        /*整体样式设计*/
+
+        body{
+            margin:0;
+            padding:0;
+            font:12px/1.6 Arial;
+            background-image: url("resources/Laboratorypictures/Laboratorybackgroubd.jpg");
+            background-size: 100% 100%;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+        a{
+            color:black;
+            text-decoration:none;
+
+        }
+        p{
+            text-indent:2em;
+        }
+        /*页头部分*/
+        #header{
+            width:768px;
+            height:191px;
+            margin:0 auto;
+            position:relative;
+        }
+        h1{
+            margin:0;
+        }
+        #header #logo{
+            position:absolute;
+            top:10px;
+
+        }
+        #logo{
+            width: 500px;
+            height: 120px;
+        }
+        #header #topnav{
+            position:absolute;
+            top:10px;
+            right:40px;
+        }
+        #header #topnav li{
+            float:left;
+            padding:4px 10px 2px;
+            margin:0 4px;
+        }
+        /*内容部分*/
+        #content{
+            width:760px;
+            margin:0 auto;
+            padding:5px;
+
+        }
+        #maincontent{
+            float:left;
+            width:540px;
+
+        }
+        #sidebar{
+            float:right;
+            width:207px;
+            height: 990px;
+        }
+        /*页脚部分*/
+        #footer{
+            clear:both;
+            width:768px;
+            height:58px;
+            margin:0 auto;
+            text-indent:0;
+            text-align:center;
+            background:#ddf0f9 ;
+        }
+        /*视觉设计--页头部分*/
+        #header h1{
+            height:46px;
+            width:322px;
+            position:absolute;
+            top:20px;
+            left:160px;
+        }
+        #header h1 span{
+            display:none;
+        }
+        #header #nav{
+            position:absolute;
+            top:140px;
+            left:50px;
+            height:27px;
+        }
+        #header #nav li{
+            float:left;
+        }
+        #header #nav li a{
+            display:block;
+            line-height:27px;
+            padding:0 0 0 14px;
+            margin-left:10px;
+            text-align:center;
+        }
+        #header #nav li a span{
+            padding:0 14px 0 0;
+            display:block;
+        }
+        #header #nav .current a{
+            background-position:0 -27px;
+        }
+        #header #nav .current a span{
+            background-position:100% -27px;
+        }
+        #header #nav .icon1 a{
+            width:64px;
+            height:59px;
+            position:absolute;
+            top:-8px;
+            right:-334px;
+        }
+        #header #nav .icon1 a span{
+            display:none;
+        }
+        #header #nav .icon2 a{
+            width:68px;
+            height:59px;
+            position:absolute;
+            top:-8px;
+            right:-398px;}
+        #header #nav .icon1 a span,#header #nav .icon2 a span{
+            display:none;
+        }
+        /*视觉设计--左侧主要内容列*/
+        #content a img{
+            padding:5px;
+            background-color:#FFFFFF;
+            border:1px #deaf50 solid;
+        }
+        .imgLeft{
+            float:left;
+            margin-right:12px;
+        }
+        .imgRight{
+            float:right;
+            margin-left:12px;
+        }
+        .multiColumn li{
+            float:left;
+            width:160px;
+            text-align:center;
+            margin:0 10px;
+            display:inline;
+        }
+        .recom{
+            clear:both;
+        }
+        .recom h2{
+            padding:20px 0 1px 26px;
+            color:#069;
+            font:bold 22px/24px "楷体_gb2312";
+            border-bottom:1px solid #deaf50;
+        }
+        .multiColumn li p{text-align:left;margin:0 0 10px 0;}
+        .side{
+            margin-top:20px;
+        }
+        .side div{
+            padding:10px;
+        }
+        .side h2{
+            color:#069;
+            font:bold 22px/24px "楷体_gb2312";
+            text-align:center;
+            margin:0;
+        }
+        .search{
+            text-align:center;
+        }
+        .side form{
+            margin:5px 0;
+        }
+        .side input{
+            border:1px solid #069;
+            background-color:#fee;
+            margin:5px 0;
+        }
+        .downbox li{
+            border-top:1px;
+            font:14px "宋体";
+        }
+        .extxa{
+            height: 280px;
+        }
+        .last h2{
+
+        }
+        .downbox li a{
+            padding-left:35px;
+            height:25px;
+            line-height:25px;
+            color:#000;
+            display:block;}
+        .downbox li a:hover{
+            color: red;
+        }
+        #content a:hover img{
+            background-color:#3d81b4;
+            border:1px solid #3d81b4;
+        }
+        #content a:hover{
+            color:#c63;
+        }
+        </style>
+</head>
+
+<body>
+<div id="header">
+    <h1><span>信息与网络中心</span></h1>
+    <div id="logo">
+
+
+        <img src="resources/Laboratorypictures/Laboratorytoplogo.jpg" height="161" width="768"/></div>
+    <ul id="nav">
+        <li class="current"><a href="index.jsp"><span>首页</span></a></li>
+        <li><a href="#"><span>中心简介</span></a></li>
+        <li><a href="#"><span>网络建设</span></a></li>
+        <li><a href="#"><span>通知公告</span></a></li>
+        <li><a href="#"><span>基本说明</span></a></li>
+        <li><a href="#"><span>人物风采</span></a></li>
+        <li><a href="#"><span>科研成果</span></a></li>
+        <li><a href="#"><span>共享天地</span></a></li>
+
+
+        <li class="icon1"><a href="#"><span>建站指南</span></a></li>
+        <li class="icon2"><a href="#"><span>技术支持</span></a></li>
+    </ul>
+    <ul id="topnav">
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系方式</a></li>
+        <li><a href="#">意见建议</a></li>
+    </ul>
+</div>
+
+<div id="content">
+    <div id="maincontent">
+        <div class="recom">
+            <h2>最新动态</h2>
+            <div class="imgLeft">
+                <a href="#">
+
+                    <img src="resources/Laboratorypictures/Laboratorydongtai.jpg" height="180" width="200"/></a>
+            </div>
+            <ul>
+                <a href=""><li>学术讲座-复旦大学彭鑫教授讲座</li></a>
+                <a href=""><li>学术讲座-北京大学金芝教授讲座</li></a>
+                <a href=""><li>学术讲座-加州大学苏文教授讲座</li></a>
+                <a href=""><li>学术讲座-清华大学江贺教授讲座</li></a>
+                <a href=""><li>澳大利亚悉尼科技大学教授应邀访问实验室</li></a>
+                <a href=""><li>实验室师生赴广州参加CBPM2019学术会议</li></a>
+                <a href=""><li>第十九届IEEE HASE国际学术会议落下帷幕</li></a>
+                <a href=""><li>实验室师生积极参加 NASAC 2018学术会议</li></a>
+                <a href=""><li>日本山梨大学福本文代教授一行访问实验室</li></a>
+                <a href=""><li>实验室师生成员参观下沙网银互联数据中心</li></a>
+
+
+            </ul>
+        </div>
+
+        <div class="recom">
+            <h2>实验室中心简介</h2>
+            <div class="imgRight">
+                <a href="#">
+
+                    <img src="resources/Laboratorypictures/Laboratorysyzxjj.jpg" height="63" width="121"/></a>
+            </div>
+            <p>计算机体系结构实验室成立于2010年，隶属于计算机实验教学中心，是主要面向在校的本科生和研究生的开放实验室。实验室在充分考虑实验体系完备的条件下，在实验技术、实验方法和实验管理方面都采用了先进的理念和方法。
+
+                计算机体系结构实验室现拥有由清华大学计算机系研制的计算机硬件实验统一平台50套，PC机50台，以及电源，万用表，示波器等仪器设备，同时可容纳实验人数约100人。目前可承担数字逻辑设计实验、计算机组成原理、计算机系统结构、EDA技术、数字系统设计等硬件类课程教学实验、课程设计和毕业设计等实验与实践教学环节的教学任务。实验室设备支持远程试验，学生实验不受实验室开放时间的限制，可以24小时随时做实验。
+
+                实验室由专门实验人员负责管理，为实验室开放提供了良好的条件，学生可自行选择时间段进行更深层次的研究。实验室有完善的管理制度，有明确的仪器操作规程，为相关课程的教学、科研提供了完善的实验平台。</p>
+        </div>
+
+        <div class="recom multiColumn">
+            <h2>实验室建设</h2>
+            <ul>
+                <li><a href="acmsys.html">
+
+                    <img src="resources/Laboratorypictures/Laboratoryacmsys.png" height="63" width="121"/></a>
+                    <p>ACM实验室
+                        <br>
+                        国际大学生程序设计竞赛（英文全称：International Collegiate Programming Contest（简称ICPC））是由国际计算机协会（ACM）主办的，一项旨在展示大学生创新能力、团队精神和在压力下编写程序、分析和解决问题能力的年度竞赛。经过近40年的发展，ACM国际大学生程序设计竞赛已经发展成为全球最具影响力的大学生程序设计竞赛。
+                    </p>
+                </li>
+                <li><a href="#">
+
+
+                    <img src="resources/Laboratorypictures/Laboratorycxsys.png" height="63" width="121"/></a>
+                    <p>创新教育实验室
+                        <br>
+                        创新教育实验室致力于为中学开展研究性学习、实施创新教育提供一站式解决方案，通过项目制课题形式带动中学生进行创新实践与科学研究。来自清华/北大/人大/北航等全国顶尖双一流高校及部分海外名校的数百名硕博研究生担任创新导师，在严谨的学术研究基础上，提供涵盖理学、工学、人文、社会、经管五大门类、30余个专业方向的上百门课题。
+                    </p>
+                </li>
+                <li><a href="#">
+
+                    <img src="resources/Laboratorypictures/Laboratoryydkfsys.jpg" height="63" width="121"/>
+                </a>
+                    <p>移动开发实验室
+                        <br>
+                        移动开发也称为手机开发，或叫做移动互联网开发。是指以手机、PDA、UMPC等便携终端为基础，进行相应的开发工作，由于这些随身设备基本都采用无线上网的方式。移动应用开发是为小型、无线计算设备编写软件的流程和程序的集合，像智能手机或者平板电脑。移动应用开发类似于Web应用开发，起源于更为传统的软件开发。
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>  <!--maincontent end-->
+
+    <div id="sidebar">
+        <div class="side search">
+            <div>
+                <form action="" method="get"><input type="text" size="20" />
+                    <input type="submit" name="Submit" value="站内搜索" />
+                </form>
+            </div>
+        </div>
+        <div class="side downbox">
+            <div>
+                <h2>常用下载</h2>
+                <ul>
+                    <li><a href="#">实验室使用须知</a></li>
+                    <li><a href="#">实验指导书模板</a></li>
+                    <li><a href="#">实验软件下载区</a></li>
+                    <li><a href="#">实验交流评论区</a></li>
+                    <li><a href="#">实验意见发表区</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side extxa">
+            <div>
+                <h2>特别提示</h2>
+                <p>请保持实验室环境整洁</p>
+                <p>请保持实验室仪器完好</p>
+                <p>请用户保管好帐户密码</p>
+                <p>请注意实验室用电安全</p>
+                <p>请及时关闭实验室电源</p>
+            </div>
+        </div>
+        <div class="side last">
+            <div>
+                <h2>友情链接</h2>
+                <p><a href="">模式识别国家重点实验室</a></p>
+                <p><a href="">计算机软件新技术实验室</a></p>
+                <p><a href="">工业控制技术国家重点实验室</a></p>
+                <p><a href="">计算机辅助设计与图形实验室</a></p>
+                <p><a href="">贝尔实验室</a></p>
+            </div>
+        </div>
+    </div>  <!--sidebar end-->
+</div>
+
+<div id="footer">
+    <p><a href="Main.html">网站首页</a> | <a href="#">邮箱登录</a> | <a href="#">加入收藏</a> | <a href="#">留言反馈</a></p>
+    <p>版权所有 &copy;  2019 信息学院实验室中心 Email：Laboratory@163.com</p>
+</div>
+</body>
+
